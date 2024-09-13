@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bear Beauty</title>
+    <!-- фонт -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- top-bar хэсэг -->
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <div class="social-links">
+                    <!-- Social Media Links -->
+                    <a href="https://www.facebook.com/profile.php?id=61554982145484">
+                        <img src="image/fb.jpg" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/bear____beauty/">
+                        <img src="image/instagram.jpg" alt="Instagram" class="social-icon">
+                    </a>
+                </div>
+                <div class="promo-text">
+                    <span>100'000 төгрөгнөөс дээш худалдан авалтанд хүргэлт үнэгүй.</span>
+                </div>
+            </div>
+        </div>        
+
+        <!-- Main  -->
+<div class="nav-bar">
+    <div class="logo">
+        <img src="image/logo.jpeg" alt="Logo">
+    </div>
+
+    <div class="user-actions">
+        <img src="image/haih.png" alt="Search" id="search-icon">
+        <img src="image/shopping-bag.svg" alt="Cart" id="cart-icon">
+        <img src="image/user.png" alt="Profile" id="profile-icon">
+    </div>
+</div>
+
+<!-- Hidden Elements -->
+<div id="search-bar" class="hidden">
+    <input type="text" placeholder="Search...">
+</div>
+
+<div id="cart-content" class="hidden">
+    <p>Таны сагс:</p>
+</div>
+
+<div id="profile-info" class="hidden">
+    <p>Хэрэглэгчийн мэдээлэл</p>
+</div>
+
+<div class="nav">
+    <div class="menu">
+        <a href="highlight.html">Онцлох</a>
+        <a href="products.html">Бүтээгдэхүүн</a>
+        <a href="types.html">Арьсны төрөл</a>
+        <a href="ingredients.html">Найрлага</a>
+        <a href="advice.html">Зөвлөгөө</a>
+    </div>
+</div>
+
+    </header>
+
+    <div class="sort-buttons">
+        <button onclick="sortProducts('asc')">Үнэ өсөхөөр</button>
+        <button onclick="sortProducts('desc')">Үнэ буурахаар</button>
+    </div>
+
+    <!-- Highlight Section -->
+    <section class="featured-products">
+        <h3>Онцлох бүтээгдэхүүнүүд</h3>
+        <div class="product-grid">
+            <div class="product-item">
+                <div class="product-images">
+                    <img src="image/5.jpg" alt="Product 1 Image 1" class="product-image active">
+                    <img src="image/2.jpeg" alt="Product 1 Image 2" class="product-image">
+                    <img src="image/3.webp" alt="Product 1 Image 3" class="product-image">
+                </div>
+                <h3>Түгжигч</h3>
+                <p class="price">45000</p>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                </div>
+                <button>Сагслах</button>
+            </div>
+            <div class="product-item">
+                <div class="product-images">
+                    <img src="image/2.jpeg" alt="Product 1 Image 1" class="product-image active">
+                    <img src="image/2.jpeg" alt="Product 1 Image 2" class="product-image">
+                    <img src="image/3.webp" alt="Product 1 Image 3" class="product-image">
+                </div>
+                <h3>Тонер</h3>
+                <p class="price">32000</p>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                </div>
+                <button>Сагслах</button>
+            </div>
+            <div class="product-item">
+                <div class="product-images">
+                    <img src="image/3.webp" alt="Product 1 Image 1" class="product-image active">
+                    <img src="image/2.jpeg" alt="Product 1 Image 2" class="product-image">
+                    <img src="image/3.webp" alt="Product 1 Image 3" class="product-image">
+                </div>
+                <h3>Өө дарагч</h3>
+                <p class="price">15000</p>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                </div>
+                <button>Сагслах</button>
+            </div>
+            <div class="product-item">
+                <div class="product-images">
+                    <img src="image/4.webp" alt="Product 1 Image 1" class="product-image active">
+                    <img src="image/2.jpeg" alt="Product 1 Image 2" class="product-image">
+                    <img src="image/3.webp" alt="Product 1 Image 3" class="product-image">
+                </div>
+                <h3>Уруулын будаг</h3>
+                <p class="price">18000</p>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                </div>
+                <button>Сагслах</button>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script>
+        // Бүтээгдэхүүний жагсаалт
+        const products = [
+            { name: 'Түгжигч', price: 45000, image: './image/5.jpg' },
+            { name: 'Тонер', price: 32000, image: './image/2.jpeg' },
+            { name: 'Өө дарагч', price: 15000, image: './image/3.webp' },
+            { name: 'Уруулын будаг', price: 18000, image: './image/4.webp' }
+        ];
+    
+        // Бүтээгдэхүүнийг харуулах функц
+        function displayProducts(products) {
+            const productGrid = document.getElementById('product-grid');
+            productGrid.innerHTML = ''; // Одоо байгаа контентыг арилгана
+            products.forEach(product => {
+                const productItem = `
+                    <div class="product-item">
+                        <div class="product-images">
+                            <img src="${product.image}" alt="${product.name}" class="product-image" onerror="this.src='image/default.jpg';">
+                        </div>
+                        <h3>${product.name}</h3>
+                        <p class="price">${product.price}₮</p>
+                        <button>Сагслах</button>
+                    </div>
+                `;
+                productGrid.innerHTML += productItem;
+            });
+        }
+    
+        // Бүтээгдэхүүнийг эрэмбэлэх функц
+        function sortProducts(order) {
+            let sortedProducts;
+            if (order === 'asc') {
+                sortedProducts = products.sort((a, b) => a.price - b.price); // Үнэ өсөхөөр эрэмбэлэх
+            } else {
+                sortedProducts = products.sort((a, b) => b.price - a.price); // Үнэ буурахаар эрэмбэлэх
+            }
+            displayProducts(sortedProducts); // Эрэмбэлсэн бүтээгдэхүүнийг дахин харуулах
+        }
+    
+        // Эхлээд бүтээгдэхүүнийг харуулах
+        window.onload = () => {
+            displayProducts(products);
+        };
+    </script>
+    
+
+    <!-- partners -->
+    <section1>
+        <div class="footer-content">
+            <div class="partner-logos">
+                <div class="logos-wrapper">
+                    <div class="logos-inner">
+                    <img src="image/logo1.png">
+                    <img src="image/logo2.webp">
+                    <img src="image/logo3.png">
+                    <img src="image/logo4.jpg">
+                    <img src="image/logo5.webp">
+                    <img src="image/logo6.jpg">
+                    <img src="image/logo7.webp">
+                    <img src="image/logo8.jpg">
+                    <img src="image/logo9.webp">
+                    <img src="image/logo10.png">
+                    </div>
+                    <div class="logos-inner">
+                        <img src="image/logo1.png">
+                        <img src="image/logo2.webp">
+                        <img src="image/logo3.png">
+                        <img src="image/logo4.jpg">
+                        <img src="image/logo5.webp">
+                        <img src="image/logo6.jpg">
+                        <img src="image/logo7.webp">
+                        <img src="image/logo8.jpg">
+                        <img src="image/logo9.webp">
+                        <img src="image/logo10.png">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section1>
+    
+    <!-- Footer хэсэг -->
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h4>Холбоо барих</h4>
+                <p><img src="image/mailw.png" alt="Email Icon" class="footer-icon"> name@gmail.com</p>
+                <p><img src="image/phone-icon.jpg" alt="Phone Icon" class="footer-icon"> +97698888888</p>
+                <p><img src="image/alarm-clock-icon-silhouette-illustration-of-a-white-alarm-clock-on-a-black-background-vector.jpg" alt="Clock Icon" class="footer-icon"> 10:00 am to 5:00 pm</p>
+            </div>
+            <div class="footer-links">
+                <h4>Тусламж</h4>
+                <a href="#">Хүргэлт</a>
+                <a href="#">Буцаалт</a>
+                <a href="#">Бидний тухай</a>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <!-- JavaScript  -->
+    <script src="scripts.js"></script>
+</body>
+</html>

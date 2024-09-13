@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bear Beauty</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- top-bar хэсэг -->
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61554982145484">
+                        <img src="image/fb.jpg" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/bear____beauty/">
+                        <img src="image/instagram.jpg" alt="Instagram" class="social-icon">
+                    </a>
+                </div>
+                <div class="promo-text">
+                    <span>100'000 төгрөгнөөс дээш худалдан авалтанд хүргэлт үнэгүй.</span>
+                </div>
+            </div>
+        </div>        
+
+        <!-- Main  -->
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="image/logo.jpeg" alt="Logo">
+            </div>
+
+            <div class="user-actions">
+                <img src="image/haih.png" alt="Search" id="search-icon">
+                <img src="image/shopping-bag.svg" alt="Cart" id="cart-icon">
+                <img src="image/user.png" alt="Profile" id="profile-icon">
+            </div>
+        </div>
+
+        <!-- Hidden Elements -->
+        <div id="search-bar" class="hidden">
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <div id="cart-content" class="hidden">
+            <p>Таны сагс:</p>
+        </div>
+
+        <div id="profile-info" class="hidden">
+            <p>Хэрэглэгчийн мэдээлэл</p>
+        </div>
+
+        <div class="nav">
+            <div class="menu">
+                <a href="highlight.html">Онцлох</a>
+                <a href="products.html">Бүтээгдэхүүн</a>
+                <a href="types.html">Арьсны төрөл</a>
+                <a href="ingredients.html">Найрлага</a>
+                <a href="advice.html">Зөвлөгөө</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="product-filter">
+        <label for="product-select">Select Product:</label>
+        <select id="product-select" onchange="filterProducts()">
+            <option value="all">Бүгд</option>
+            <option value="lipstick">Уруулын будаг</option>
+            <option value="lock">Түгжигч</option>
+            <option value="toner">Тонер</option>
+            <option value="concealer">Өө дарагч</option>
+        </select>
+    </div>
+    
+    <!-- Products Section -->
+    <section class="highlight-section">
+        <h1>Онцлох бүтээгдэхүүнүүд</h1>
+        <div class="product-item" data-category="lock">
+            <div class="product-images">
+                <img src="image/5.jpg" alt="Product 1 Image 1" class="product-image active">
+            </div>
+            <h3>Түгжигч</h3>
+            <p class="price">45000</p>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+            <button>Сагслах</button>
+            <div class="tooltip">Түгжигч</div>
+        </div>
+        
+        <div class="product-item" data-category="toner">
+            <div class="product-images">
+                <img src="image/2.jpeg" alt="Product 1 Image 1" class="product-image active">
+            </div>
+            <h3>Тонер</h3>
+            <p class="price">32000</p>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+                <span class="star">☆</span>
+            </div>
+            <button>Сагслах</button>
+            <div class="tooltip">Тонер</div>
+        </div>
+        
+        <div class="product-item" data-category="concealer">
+            <div class="product-images">
+                <img src="image/3.webp" alt="Product 1 Image 1" class="product-image active">
+            </div>
+            <h3>Өө дарагч</h3>
+            <p class="price">15000</p>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+            <button>Сагслах</button>
+            <div class="tooltip">Өө дарагч</div>
+        </div>
+        
+        <div class="product-item" data-category="lipstick">
+            <div class="product-images">
+                <img src="image/4.webp" alt="Product 1 Image 1" class="product-image active">
+            </div>
+            <h3>Уруулын будаг</h3>
+            <p class="price">18000</p>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+                <span class="star">☆</span>
+            </div>
+            <button>Сагслах</button>
+            <div class="tooltip">Уруулын будаг</div>
+        </div>
+    </section>
+
+    <!-- partners -->
+    <section1>
+        <div class="footer-content">
+            <div class="partner-logos">
+                <div class="logos-wrapper">
+                    <div class="logos-inner">
+                        <img src="image/logo1.png">
+                        <img src="image/logo2.webp">
+                        <img src="image/logo3.png">
+                        <img src="image/logo4.jpg">
+                        <img src="image/logo5.webp">
+                        <img src="image/logo6.jpg">
+                        <img src="image/logo7.webp">
+                        <img src="image/logo8.jpg">
+                        <img src="image/logo9.webp">
+                        <img src="image/logo10.png">
+                    </div>
+                    <div class="logos-inner">
+                        <img src="image/logo1.png">
+                        <img src="image/logo2.webp">
+                        <img src="image/logo3.png">
+                        <img src="image/logo4.jpg">
+                        <img src="image/logo5

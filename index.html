@@ -4,121 +4,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bear Beauty</title>
+    <!-- фонт -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Social Icons -->
-    <div class="top-bar">
-        <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="https://www.youtube.com" target="_blank"><img src="youtube-icon.png" alt="YouTube"></a>
-            <a href="https://www.tiktok.com" target="_blank"><img src="tiktok-icon.png" alt="TikTok"></a>
-        </div>
-        <div class="promotion">
-            <a href="#">Sunscreen 30% off</a>
-        </div>
+    <!-- Header -->
+    <header>
+        <!-- top-bar хэсэг -->
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <div class="social-links">
+                    <!-- Social Media Links -->
+                    <a href="https://www.facebook.com/profile.php?id=61554982145484">
+                        <img src="image/fb.jpg" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/bear____beauty/">
+                        <img src="image/instagram.jpg" alt="Instagram" class="social-icon">
+                    </a>
+                </div>
+                <div class="promo-text">
+                    <span>100'000 төгрөгнөөс дээш худалдан авалтанд хүргэлт үнэгүй.</span>
+                </div>
+            </div>
+        </div>        
+
+        <!-- Main  -->
+<div class="nav-bar">
+    <div class="logo">
+        <img src="image/logo.jpeg" alt="Logo">
     </div>
 
-    <nav class="navbar">
-        <div class="logo">
-            <a href="#">LOGO</a>
-        </div>
-        <div class="nav-links">
-            <a href="#">Featured Now</a>
-            <a href="#">Product Type</a>
-            <a href="#">Skin Concern</a>
-            <a href="#">Ingredient</a>
-            <a href="#">Guide</a>
-        </div>
-        <div class="right-icons">
-            <a href="#"><img src="user-icon.png" alt="User"></a>
-            <a href="#"><img src="search-icon.png" alt="Search"></a>
-            <a href="#"><img src="cart-icon.png" alt="Cart"></a>
-        </div>
-    </nav>
-
-        <div class="promotion">
-            <a href="#">FREE SHIPPING ON ORDERS $30+</a>
-        </div>
-     <section class="product">
-        <div class="product-image">
-            <img src="product-image.png" alt="Two in One Poreless Power Liquid COSRX">
-        </div>
-        <div class="promotion-details">
-            <p>#ADVICE</p>
-            <h2>HAIR: <strong>SKIN CARE</strong></h2>
-            <button class="read-more">READ MORE</button>
-        </div>
-        <div class="product-image">
-            <img src="product-image.png" alt="Two in One Poreless Power Liquid COSRX">
-        </div>
-        <div class="promotion-details">
-            <p>#ADVICE</p>
-            <h2>HAIR: <strong>SKIN CARE</strong></h2>
-            <button class="read-more">READ MORE</button>
-        </div>
-        <div class="product-image">
-            <img src="product-image.png" alt="Two in One Poreless Power Liquid COSRX">
-        </div>
-        <div class="promotion-details">
-            <p>#ADVICE</p>
-            <h2>HAIR: <strong>SKIN CARE</strong></h2>
-            <button class="read-more">READ MORE</button>
-        </div>
-        <div class="product-image">
-            <img src="product-image.png" alt="Two in One Poreless Power Liquid COSRX">
-        </div>
-        <div class="promotion-details">
-            <p>#ADVICE</p>
-            <h2>HAIR: <strong>SKIN CARE</strong></h2>
-            <button class="read-more">READ MORE</button>
-        </div>
-    </section>
- 
-    <!-- Brand -->
-    <div class="scrolling-brands">
-        <div class="scrolling-content">
-            <a href="#">COSRX</a>
-            <a href="#">OLIVE YOUNG</a>
-            <a href="#">TENZERO</a>
-            <a href="#">MISSHA</a>
-            <a href="#">TORRIDEN</a>
-            <a href="#">TENZERO</a>
-            <a href="#">MISSHA</a>
-            <a href="#">TORRIDEN</a>
-            <a href="#">MISSHA</a>
-
-            <a href="#">COSRX</a>
-            <a href="#">OLIVE YOUNG</a>
-            <a href="#">TENZERO</a>
-            <a href="#">MISSHA</a>
-            <a href="#">TORRIDEN</a>
-            <a href="#">TENZERO</a>
-            <a href="#">MISSHA</a>
-            <a href="#">TORRIDEN</a>
-            <a href="#">MISSHA</a>
-        </div>
+    <div class="user-actions">
+        <img src="image/haih.png" alt="Search" id="search-icon">
+        <img src="image/shopping-bag.svg" alt="Cart" id="cart-icon">
+        <img src="image/user.png" alt="Profile" id="profile-icon">
     </div>
-    <!-- Footer  -->
-    <footer class="footer">
-        <div class="footer-section contact-us">
-            <h3>Contact us</h3>
-            <p><img src="email-icon.png" alt="Email"> name@gmail.com</p>
-            <p><img src="phone-icon.png" alt="Phone"> +97688888888</p>
-            <p><img src="clock-icon.png" alt="Working Hours"> 10:00 am to 5:00 pm</p>
+</div>
+
+<!-- Hidden Elements -->
+<div id="search-bar" class="hidden">
+    <input type="text" placeholder="Search...">
+</div>
+
+<div id="cart-content" class="hidden">
+    <p>Таны сагс:</p>
+</div>
+
+<div id="profile-info" class="hidden">
+    <p>Хэрэглэгчийн мэдээлэл</p>
+</div>
+
+<div class="nav">
+    <div class="menu">
+        <a href="indec.html">Нүүр</a>
+        <a href="featured.html">Онцлох</a>
+        <a href="product.html">Бүтээгдэхүүн</a>
+        <a href="skin.html">Арьсны төрөл</a>
+        <a href="ingredient.html">Найрлага</a>
+        <a href="guide.html">Зөвлөгөө</a>
+    </div>
+</div>
+
+    </header>
+
+    <!-- Онцлох бүтээгдэхүүн -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="description-container">
+                <h1>Батганы эсрэг хамгаалалт</h1>
+                <p class="description-text">
+                    Батганы эсрэг энэхүү комплекс сет нь арьсны гүн цэвэрлэгээ болон эмчилгээг хангаж, батганы шинж тэмдгүүдийг багасгах зорилготой. Бүтээгдэхүүн нь хэт авиан болон антибактериал үйлчилгээтэй байгалийн орцтой тул арьсны тослогийн тэнцвэрийг хадгалах, батганы үүсгэгч бактерийг устгах, мөн арьсыг чийгшүүлэхэд тусална.
+                </p>
+                <button class="read-more-button">Үргэлжлүүлэх</button>
+            </div>
         </div>
-        <div class="footer-section help">
-            <h3>Help</h3>
-            <p><a href="#">Shipping Policy</a></p>
-            <p><a href="#">Return Policy</a></p>
+        <div class="hero-image">
+            <img src="image/ontsloh.jpg" alt="Featured Product">
         </div>
-        <div class="footer-section shop">
-            <h3>Shop</h3>
-            <p><a href="#">About Us</a></p>
-            <p><a href="#">Stores</a></p>
-            <p><a href="#">Reviews</a></p>
+    </section>       
+    
+
+    <!-- Онцлох бүтээгдэхүүнүүдийн жагсаалт -->
+        <section class="featured-products">
+            <h3>Онцлох бүтээгдэхүүнүүд</h3>
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-images">
+                        <img src="image/5.jpg" alt="Product 1 Image 1" class="product-image active">
+                        <img src="image/2.jpeg" alt="Product 1 Image 2" class="product-image">
+                        <img src="image/3.webp" alt="Product 1 Image 3" class="product-image">
+                    </div>
+                    <h3>Түгжигч</h3>
+                    <p class="price">45000</p>
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <button>Сагслах</button>
+                </div>
+                <div class="product-item">
+                    <div class="product-images">
+                        <img src="image/2.jpeg" alt="Product 1 Image 1" class="product-image active">
+                        <img src="image/2.jpeg" alt="Product 1 Image 2" class="product-image">
+                        <img src="image/3.webp" alt="Product 1 Image 3" class="product-image">
+                    </div>
+                    <h3>Тонер</h3>
+                    <p class="price">32000</p>
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <button>Сагслах</button>
+                </div>
+                <div class="product-item">
+                    <div class="product-images">
+                        <img src="image/3.webp" alt="Product 1 Image 1" class="product-image active">
+                        <img src="image/2.jpeg" alt="Product 1 Image 2" class="product-image">
+                        <img src="image/3.webp" alt="Product 1 Image 3" class="product-image">
+                    </div>
+                    <h3>Өө дарагч</h3>
+                    <p class="price">15000</p>
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <button>Сагслах</button>
+                </div>
+                <div class="product-item">
+                    <div class="product-images">
+                        <img src="image/4.webp" alt="Product 1 Image 1" class="product-image active">
+                        <img src="image/2.jpeg" alt="Product 1 Image 2" class="product-image">
+                        <img src="image/3.webp" alt="Product 1 Image 3" class="product-image">
+                    </div>
+                    <h3>Уруулын будаг</h3>
+                    <p class="price">18000</p>
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <button>Сагслах</button>
+                </div>
+            </div>
+        </section>
+
+    
+    <!-- partners -->
+    <section1>
+        <div class="footer-content">
+            <div class="partner-logos">
+                <div class="logos-wrapper">
+                    <div class="logos-inner">
+                    <img src="image/logo1.png">
+                    <img src="image/logo2.webp">
+                    <img src="image/logo3.png">
+                    <img src="image/logo4.jpg">
+                    <img src="image/logo5.webp">
+                    <img src="image/logo6.jpg">
+                    <img src="image/logo7.webp">
+                    <img src="image/logo8.jpg">
+                    <img src="image/logo9.webp">
+                    <img src="image/logo10.png">
+                    </div>
+                    <div class="logos-inner">
+                        <img src="image/logo1.png">
+                        <img src="image/logo2.webp">
+                        <img src="image/logo3.png">
+                        <img src="image/logo4.jpg">
+                        <img src="image/logo5.webp">
+                        <img src="image/logo6.jpg">
+                        <img src="image/logo7.webp">
+                        <img src="image/logo8.jpg">
+                        <img src="image/logo9.webp">
+                        <img src="image/logo10.png">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section1>
+    
+    <!-- Footer хэсэг -->
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h4>Холбоо барих</h4>
+                <p><img src="image/mailw.png" alt="Email Icon" class="footer-icon"> name@gmail.com</p>
+                <p><img src="image/phone-icon.jpg" alt="Phone Icon" class="footer-icon"> +97698888888</p>
+                <p><img src="image/alarm-clock-icon-silhouette-illustration-of-a-white-alarm-clock-on-a-black-background-vector.jpg" alt="Clock Icon" class="footer-icon"> 10:00 am to 5:00 pm</p>
+            </div>
+            <div class="footer-links">
+                <h4>Тусламж</h4>
+                <a href="#">Хүргэлт</a>
+                <a href="#">Буцаалт</a>
+                <a href="#">Бидний тухай</a>
+            </div>
         </div>
     </footer>
+    
+    
 
+    <!-- JavaScript  -->
+    <script src="scripts.js"></script>
 </body>
 </html>
